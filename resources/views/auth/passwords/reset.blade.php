@@ -1,7 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+  
+<div id="forgotten-container">
+     <h1>Forgotten</h1>
+    <span class="close-btn">
+      <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+    </span>
+  
+    <form>
+      <input type="email" name="email" placeholder="E-mail">
+      <a href="#" class="log orange-btn">Get new password</a>
+  </form>
+  </div>
+
+<!-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -61,5 +74,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 @endsection

@@ -1,7 +1,64 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div id="login-button">
+    <img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png">
+    </img>
+  </div>
+  <div id="container">
+    <h1>{{ __('Login') }}</h1>
+    <span class="close-btn">
+      <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+    </span>
+  
+    <form method="POST" action="{{ route('login') }}">
+    @csrf
+      <input type="email" name="email" placeholder="E-mail" id="email" class="@error('email') is-invalid @enderror" value="{{ old('email') }}" required autocomplete="email" autofocus>
+      @error('email')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+      @enderror
+      <input type="password" placeholder="Password" id="password" class="@error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+      @error('password')
+            <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+      @enderror
+       <button class="log" type="submit" class="btn btn-primary">
+                                    {{ __('Login') }}
+                                </button>
+
+        
+      <div id="remember-container">
+        <input type="checkbox" id="checkbox-2-1" class="checkbox" checked="checked" name="remember"  {{ old('remember') ? 'checked' : '' }}/>
+        <label id="remember" for="remember">
+            {{ __('Remember Me') }}
+        </label>
+
+        @if (Route::has('password.request'))
+            <a id="forgotten" href="{{ route('password.request') }}">
+                {{ __('Forgotten password') }}
+            </a>
+        @endif
+      </div>
+  </form>
+  </div>
+  
+  <!-- Forgotten Password Container -->
+  <div id="forgotten-container">
+     <h1>Forgotten</h1>
+    <span class="close-btn">
+      <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+    </span>
+  
+    <form>
+      <input type="email" name="email" placeholder="E-mail">
+      <a href="#" class="log orange-btn">Get new password</a>
+  </form>
+  </div>
+<!-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -69,5 +126,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 @endsection
