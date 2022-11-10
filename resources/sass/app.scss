@@ -53,6 +53,13 @@ img {
     box-shadow: 1px 1px 50px #000;
     display: none;
 }
+
+.cont {
+    border-radius: 5px;
+    background: rgba(3, 3, 3, 0.25);
+    box-shadow: 1px 1px 50px #000;
+}
+
 .close-btn {
     position: absolute;
     cursor: pointer;
@@ -74,7 +81,7 @@ img {
     opacity: 0.5;
 }
 /* Heading */
-h1 {
+h1,label, .reg {
     font-family: 'Open Sans Condensed', sans-serif;
     position: relative;
     margin-top: 0px;
@@ -82,9 +89,10 @@ h1 {
     font-size: 40px;
     color: #ddd;
     text-shadow: 3px 3px 10px #000;
+    font-weight: bold;
 }
 /* Inputs */
-.log, input {
+.log, .regis, input {
     font-family: 'Open Sans Condensed', sans-serif;
     text-decoration: none;
     position: relative;
@@ -102,6 +110,41 @@ h1 {
     -o-transition: all 2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
+
+.inp{
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+    display: block;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 6px;
+    border: 1px solid black;
+    background: rgba(3, 3, 3, .1);
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.inpb{
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+    display: block;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 6px;
+    border: 1px solid black;
+    background: rgba(0, 0, 0, 0.747);
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
 input:focus {
     outline: none;
     box-shadow: 3px 3px 10px #333;
@@ -132,6 +175,19 @@ input:focus {
 .log:hover {
     opacity: 0.7;
 }
+
+.regis {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    padding: 5px 50px;
+    background: rgba(107, 255, 3, 0.3);
+}
+.regis:hover {
+    opacity: 0.7;
+    background: rgba(116, 253, 10, 0.3);
+    color: #fff;
+}
+
 #remember-container {
     position: relative;
     margin: -5px 20px;
