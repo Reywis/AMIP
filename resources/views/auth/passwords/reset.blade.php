@@ -1,24 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-  
-<div id="forgotten-container">
-     <h1>Ejemplo</h1>
-    <span class="close-btn">
-      <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
-    </span>
-  
-    <form>
-      <input type="email" name="email" placeholder="E-mail">
-      <a href="#" class="log orange-btn">Get new password</a>
-  </form>
-  </div>
 
-<!-- <div class="container">
+
+<div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+                <div class="card-header">{{ __('Ejemplo') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('password.update') }}">
@@ -74,5 +63,5 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
 @endsection
