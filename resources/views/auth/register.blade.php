@@ -25,24 +25,24 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">segundo nombre</label>
+                            <label for="second_name" class="col-md-4 col-form-label text-md-end">segundo nombre</label>
 
                             <div class="col-md-6">
-                              <input type="text" class="inp" name="name"  autofocus>
+                              <input type="text" class="inp" name="second_name"  autofocus>
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">primer apellido</label>
+                            <label for="first_lastname" class="col-md-4 col-form-label text-md-end">primer apellido</label>
 
                             <div class="col-md-6">
-                              <input  type="text" class="inp" name="name"  autofocus>
+                              <input  type="text" class="inp" name="first_lastname"  autofocus>
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">segundo apellido</label>
+                            <label for="second_lastname" class="col-md-4 col-form-label text-md-end">segundo apellido</label>
 
                             <div class="col-md-6">
-                              <input  type="text" class="inp" name="name"  autofocus>
+                              <input  type="text" class="inp" name="second_lastname"  autofocus>
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -82,212 +82,186 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">tipo de identificación</label>
+                            <label for="lang" class="col-md-4 col-form-label text-md-end">tipo de identificación</label>
 
                             <div class="col-md-6">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary btn-block dropdown-toggle inp inp" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Default
-                                </button>
-                                <div class="dropdown-menu cont cont" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item inpb inpb" type="button">CÉDULA DE CIUDADANÍA</button>
-                                    <button class="dropdown-item inpb inpb" type="button">CÉDULA DE EXTRANJERIA</button>
-                                    <button class="dropdown-item inpb inpb" type="button">PERMISO PROTECCION TEMPORAL</button>
-                                    <button class="dropdown-item inpb inpb" type="button">PASAPORTE</button>
-                                    <button class="dropdown-item inpb inpb" type="button">DOCUMENTO DE OTRO PAIS</button>
-                                </div>
-                                </div>
+                           
+                                <select name="tipoidentificacion" class="inp" id="lang" style="padding:13px;">
+                                    <option class="inpb" value=""></option>
+                                    <option class="inpb" value="CÉDULA DE CIUDADANÍA">CÉDULA DE CIUDADANÍA</option>
+                                    <option class="inpb" value="CÉDULA DE EXTRANJERIA">CÉDULA DE EXTRANJERIA</option>
+                                    <option class="inpb" value="PERMISO PROTECCION TEMPORAL">PERMISO PROTECCION TEMPORAL</option>
+                                    <option class="inpb" value="PASAPORTE">PASAPORTE</option>
+                                    <option class="inpb" value="DOCUMENTO DE OTRO PAIS">DOCUMENTO DE OTRO PAIS</option>
+                                </select>
+                              
                             </div>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Número de Identificación</label>
+                            <label for="number_identification" class="col-md-4 col-form-label text-md-end">Número de Identificación</label>
 
                             <div class="col-md-6">
-                              <input  type="text" class="inp" name="name"  autofocus>
+                              <input  type="text" class="inp" name="number_identification"  autofocus>
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Fecha de Nacimiento</label>
+                            <label for="date_birth" class="col-md-4 col-form-label text-md-end">Fecha de Nacimiento</label>
 
                             <div class="col-md-6">
-                              <input  type="date" class="inp" name="name"  autofocus>
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Ciudad de Nacimiento</label>
-
-                            <div class="col-md-6">
-                              <input  type="text" class="inp" name="name"  autofocus>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Departamento de Nacimiento</label>
-
-                            <div class="col-md-6">
-                              <input  type="text" class="inp" name="name"  autofocus>
+                              <input  type="date" class="inp" name="date_birth"  autofocus>
                             </div>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Estado Civil</label>
+                            <label for="city_birth" class="col-md-4 col-form-label text-md-end">Ciudad de Nacimiento</label>
 
                             <div class="col-md-6">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary btn-block dropdown-toggle inp inp" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Default
-                                </button>
-                                <div class="dropdown-menu cont cont" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item inpb inpb" type="button">Soltero (a)</button>
-                                    <button class="dropdown-item inpb inpb" type="button">Casado (a)</button>
-                                    <button class="dropdown-item inpb inpb" type="button">Viudo (a)</button>
-                                  
-                                </div>
-                                </div>
+                              <input  type="text" class="inp" name="city_birth"  autofocus>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="department_birth" class="col-md-4 col-form-label text-md-end">Departamento de Nacimiento</label>
+
+                            <div class="col-md-6">
+                              <input  type="text" class="inp" name="department_birth"  autofocus>
                             </div>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Celular</label>
+                            <label for="sc" class="col-md-4 col-form-label text-md-end">Estado Civil</label>
 
                             <div class="col-md-6">
-                              <input  type="tel" class="inp" name="name"  autofocus>
+                            <select name="estadocivil" class="inp" id="sc" style="padding:13px;">
+                                    <option class="inpb" value=""></option>
+                                    <option class="inpb" value="Soltero (a)">Soltero (a)</option>
+                                    <option class="inpb" value="Casado (a)">Casado (a)</option>
+                                    <option class="inpb" value="Viudo (a)">Viudo (a)</option>
+                                </select>
+                              
                             </div>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Dirección de la Iglesia</label>
+                            <label for="cell_phone" class="col-md-4 col-form-label text-md-end">Celular</label>
 
                             <div class="col-md-6">
-                              <input  type="text" class="inp" name="name"  autofocus>
+                              <input  type="tel" class="inp" name="cell_phone"  autofocus>
                             </div>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Ciudad donde está ubicada la Iglesia</label>
+                            <label for="address_church" class="col-md-4 col-form-label text-md-end">Dirección de la Iglesia</label>
 
                             <div class="col-md-6">
-                              <input  type="text" class="inp" name="name"  autofocus>
+                              <input  type="text" class="inp" name="address_church"  autofocus>
                             </div>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Departamento donde está ubicada la Iglesia</label>
+                            <label for="city_located_church" class="col-md-4 col-form-label text-md-end">Ciudad donde está ubicada la Iglesia</label>
 
                             <div class="col-md-6">
-                              <input  type="text" class="inp" name="name"  autofocus>
+                              <input  type="text" class="inp" name="city_located_church"  autofocus>
                             </div>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Zona a la que pertenece</label>
+                            <label for="department_church_located" class="col-md-4 col-form-label text-md-end">Departamento donde está ubicada la Iglesia</label>
 
                             <div class="col-md-6">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary btn-block dropdown-toggle inp" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Default
-                                </button>
-                                <div class="dropdown-menu cont cont" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item inpb" type="button">1</button>
-                                    <button class="dropdown-item inpb" type="button">2</button> 
-                                    <button class="dropdown-item inpb" type="button">3</button>
-                                    <button class="dropdown-item inpb" type="button">4</button>           
-                                    <button class="dropdown-item inpb" type="button">5</button> 
-                                    <button class="dropdown-item inpb" type="button">6</button>
-                                    <button class="dropdown-item inpb" type="button">7</button>           
-                                    <button class="dropdown-item inpb" type="button">8</button> 
-                                </div>
-                                </div>
+                              <input  type="text" class="inp" name="department_church_located"  autofocus>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="z" class="col-md-4 col-form-label text-md-end">Zona a la que pertenece</label>
+
+                            <div class="col-md-6">
+                            <select name="zona" class="inp" id="z" style="padding:13px;">
+                                    <option class="inpb" value=""></option>
+                                    <option class="inpb" value="1">1</option>
+                                    <option class="inpb" value="2">2</option>
+                                    <option class="inpb" value="3">3</option>
+                                    <option class="inpb" value="4">4</option>
+                                    <option class="inpb" value="5">5</option>
+                                    <option class="inpb" value="6">6</option>
+                                    <option class="inpb" value="7">7</option>
+                                    <option class="inpb" value="8">8</option>
+                                </select>
+                              
                             </div>
                         </div>
 
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">EPS</label>
+                            <label for="eps" class="col-md-4 col-form-label text-md-end">EPS</label>
 
                             <div class="col-md-6">
-                              <input  type="text" class="inp" name="name"  autofocus>
+                              <input  type="text" class="inp" name="eps"  autofocus>
                             </div>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Régimen</label>
+                            <label for="Regimen" class="col-md-4 col-form-label text-md-end">Régimen</label>
 
                             <div class="col-md-6">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary btn-block dropdown-toggle inp" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Default
-                                </button>
-                                <div class="dropdown-menu cont" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item inpb" type="button">SUBSIDIADO</button>
-                                    <button class="dropdown-item inpb" type="button">CONTRIBUTIVO COTIZANTE</button>
-                                    <button class="dropdown-item inpb" type="button">CONTRIBUTIVO BENEFICIARIO</button>
-                                  
-                                </div>
-                                </div>
+                            <select name="regimen" class="inp" id="Regimen" style="padding:13px;">
+                                    <option class="inpb" value=""></option>
+                                    <option class="inpb" value="SUBSIDIADO">SUBSIDIADO</option>
+                                    <option class="inpb" value="CONTRIBUTIVO COTIZANTE">CONTRIBUTIVO COTIZANTE</option>
+                                    <option class="inpb" value="CONTRIBUTIVO BENEFICIARIO">CONTRIBUTIVO BENEFICIARIO</option>
+                                </select>
                             </div>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Aporta Ahorro Vejéz</label>
+                            <label for="ah" class="col-md-4 col-form-label text-md-end">Aporta Ahorro Vejéz</label>
 
                             <div class="col-md-6">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary btn-block dropdown-toggle inp" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Default
-                                </button>
-                                <div class="dropdown-menu cont" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item inpb" type="button">Si</button>
-                                    <button class="dropdown-item inpb" type="button">No</button>
-                                </div>
-                                </div>
+                            <select name="ahorrovejez" class="inp" id="ah" style="padding:13px;">
+                                    <option class="inpb" value=""></option>
+                                    <option class="inpb" value="si">si</option>
+                                    <option class="inpb" value="no">no</option>
+                                </select>
                             </div>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Bautizado en el Espíritu Santo</label>
+                            <label for="bau" class="col-md-4 col-form-label text-md-end">Bautizado en el Espíritu Santo</label>
 
                             <div class="col-md-6">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary btn-block dropdown-toggle inp" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Default
-                                </button>
-                                <div class="dropdown-menu cont" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item inpb" type="button">Sí</button>
-                                    <button class="dropdown-item inpb" type="button">No</button>                
-                                </div>
-                                </div>
+                                <select name="bautizosanto" class="inp" id="bau" style="padding:13px;">
+                                    <option class="inpb" value=""></option>
+                                    <option class="inpb" value="si">si</option>
+                                    <option class="inpb" value="no">no</option>
+                                </select>
                             </div>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Grado Ministerial</label>
+                            <label for="gradmin" class="col-md-4 col-form-label text-md-end">Grado Ministerial</label>
 
                             <div class="col-md-6">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary btn-block dropdown-toggle inp" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Default
-                                </button>
-                                <div class="dropdown-menu cont" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item inpb" type="button">OBRERO LAICO</button>
-                                    <button class="dropdown-item inpb" type="button">PASTOR LICENCIADO</button>           
-                                    <button class="dropdown-item inpb" type="button">MINISTRO ORDENADO</button>                
-                                </div>
-                                </div>
+                               <select name="gradoministerial" class="inp" id="gradmin" style="padding:13px;">
+                                    <option class="inpb" value=""></option>
+                                    <option class="inpb" value="OBRERO LAICO">OBRERO LAICO</option>
+                                    <option class="inpb" value="PASTOR LICENCIADO">PASTOR LICENCIADO</option>
+                                    <option class="inpb" value="MINISTRO ORDENADO">MINISTRO ORDENADO</option>
+                                </select>
                             </div>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Cargo que Ejerce</label>
+                            <label for="cargo_ejerce" class="col-md-4 col-form-label text-md-end">Cargo que Ejerce</label>
 
                             <div class="col-md-6">
-                              <input  type="text" class="inp" name="name"  autofocus>
+                              <input  type="text" class="inp" name="cargo_ejerce"  autofocus>
                             </div>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Perfil Ministerial</label>
+                            <label for="ministerial_profile" class="col-md-4 col-form-label text-md-end">Perfil Ministerial</label>
 
                             <div class="col-md-6">
                               <textarea class="inp" name="" id="" cols="40" rows="5"></textarea>
@@ -295,15 +269,15 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Fecha de Presentación en IAMES (AMIP)</label>
+                            <label for="date_presentation_iames" class="col-md-4 col-form-label text-md-end">Fecha de Presentación en IAMES (AMIP)</label>
 
                             <div class="col-md-6">
-                            <input  type="date" class="inp" name="name"  autofocus>
+                            <input  type="date" class="inp" name="date_presentation_iames"  autofocus>
                             </div>
                         </div>
     
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Ascensos o Nombramientos</label>
+                            <label for="pointments" class="col-md-4 col-form-label text-md-end">Ascensos o Nombramientos</label>
 
                             <div class="col-md-6">
                               <textarea class="inp" name="" id="" cols="40" rows="5"></textarea>
@@ -311,7 +285,7 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Formación Académica dentro de IAMES (AMIP)</label>
+                            <label for="formación_academica_iames" class="col-md-4 col-form-label text-md-end">Formación Académica dentro de IAMES (AMIP)</label>
 
                             <div class="col-md-6">
                               <textarea class="inp" name="" id="" cols="40" rows="5"></textarea>
@@ -319,7 +293,7 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Novedades</label>
+                            <label for="news" class="col-md-4 col-form-label text-md-end">Novedades</label>
 
                             <div class="col-md-6">
                               <textarea class="inp" name="" id="" cols="40" rows="5"></textarea>
@@ -327,37 +301,29 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Tiene Credencial Vigente</label>
+                            <label for="crevi" class="col-md-4 col-form-label text-md-end">Tiene Credencial Vigente</label>
 
                             <div class="col-md-6">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary btn-block dropdown-toggle inp" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Default
-                                </button>
-                                <div class="dropdown-menu cont" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item inpb" type="button">Si</button>
-                                    <button class="dropdown-item inpb" type="button">No</button>  
-                                </div>
-                                </div>
+                            <select name="credencialvigente" class="inp" id="crevi" style="padding:13px;">
+                                    <option class="inpb" value=""></option>
+                                    <option class="inpb" value="si">si</option>
+                                    <option class="inpb" value="no">no</option>
+                                </select>
                             </div>
                         </div>
 
 
                         <div class="row mb-3">
-                            <label for="codigo-qr" class="col-md-4 col-form-label text-md-end">Estado actual</label>
+                            <label for="estact" class="col-md-4 col-form-label text-md-end">Estado actual</label>
 
                             <div class="col-md-6">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary btn-block dropdown-toggle inp" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Default
-                                </button>
-                                <div class="dropdown-menu cont" aria-labelledby="dropdownMenu2">
-                                    <button class="dropdown-item inpb" type="button">Activo</button>
-                                    <button class="dropdown-item inpb" type="button">Inactivo</button>           
-                                    <button class="dropdown-item inpb" type="button">Retirado</button>   
-                                    <button class="dropdown-item inpb" type="button">Suspendido</button>              
-                                </div>
-                                </div>
+                            <select name="estadoactual" class="inp" id="estact" style="padding:13px;">
+                                    <option class="inpb" value=""></option>
+                                    <option class="inpb" value="Activo">Activo</option>
+                                    <option class="inpb" value="Inactivo">Inactivo</option>
+                                    <option class="inpb" value="Retirado">Retirado</option>
+                                    <option class="inpb" value="Suspendido">Suspendido</option>
+                                </select>
                             </div>
                         </div>
 
